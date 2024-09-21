@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: black;
+    /* border-radius: 30px; */
+}
+
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 170px;
+}
+
+.navbar li a:hover{
+    color: red
+}
+
+.wrapper{
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    
+}
+
+.container{
+    position:relative;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform-style:preserve-3d;
+    z-index:-1;
+    
+    
+}
+
+/* _______________________________________________________ */
+
+  .typing-demo {
+    width: 19ch;
+    animation: typing 3s steps(19), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: "Roboto Mono";
+    font-weight: 900;
+    font-size: 7em;
+    color: rgb(19, 17, 2);
+  }
+  
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+/* _______________________________________________________ */
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.vidtittle{
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+.background, .foreground{
+    position:absolute;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    z-index:-1;
+}
+
+h1{
+    position:absolute;
+    top: 5rem;
+    font-size: 10rem;
+    letter-spacing: 4px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+section{
+    background-color: rgba(45,45,45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading{
+    font-size:5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    margin:5rem 0;
+    padding: 0 10rem;
+}
+
+.list{
+    font-size: 1.5rem;
+    margin:5rem 0;
+    padding: 0 10rem;
+}
+.list ul li{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 2rem;
+}
+.list ul li p{
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 0 2rem;
+}
+
+.bg{
+    position:relative;
+    width:100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height:500px;
+}
+.desc{
+    position:absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top:40%;
+    left:65%;
+    transform:translateX(-50%) translateX(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.bg1{
+    background-image: url(./img/IMG1.jpeg);
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #6a7201;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
